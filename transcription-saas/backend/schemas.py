@@ -15,7 +15,7 @@ class UserResponse(BaseModel):
     created_at: datetime
     
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 class TranscriptionCreate(BaseModel):
     filename: str
@@ -32,7 +32,7 @@ class TranscriptionResponse(BaseModel):
     created_at: datetime
     
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 class APIKeyCreate(BaseModel):
     name: str
@@ -44,7 +44,7 @@ class APIKeyResponse(BaseModel):
     created_at: datetime
     
     class Config:
-        from_attributes = True
+        orm_mode = True
 
 class SubscriptionCreate(BaseModel):
     plan_name: str
@@ -62,4 +62,4 @@ class SubscriptionResponse(BaseModel):
     created_at: datetime
     
     class Config:
-        from_attributes = True
+        orm_mode = True
